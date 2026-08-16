@@ -105,39 +105,47 @@
 /* Mobile */
 @media (max-width: 768px) {
   .landing {
-    min-height: auto;
+    position: relative;
+    min-height: 700px;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 20px;
-    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+    overflow: hidden;
+  }
+
+  .backgroundVideo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
   }
 
   .content {
+    position: relative;
+    z-index: 2;
     width: 100%;
     max-width: 100%;
+    text-align: center;
   }
 
   .content h1 {
-    font-size: 42px;
-    line-height: 1.1;
+    font-size: 40px;
   }
 
   .description {
-    max-width: 100%;
     font-size: 16px;
+    max-width: 100%;
   }
 
-  .video,
-  .backgroundVideo {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  .button {
+    position: relative;
+    z-index: 3;
   }
 
   .imageContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
