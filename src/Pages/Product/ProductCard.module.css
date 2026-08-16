@@ -1,0 +1,25 @@
+.card {
+  background: rgba(0, 0, 0, 0.493);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.productName {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}

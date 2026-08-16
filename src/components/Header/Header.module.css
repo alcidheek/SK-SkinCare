@@ -1,0 +1,60 @@
+.header {
+  height: 80px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(90deg, #fff1f4, #fdf7f8, #f8e8ec);
+  border-bottom: 1px solid #f0d5dc;
+  box-sizing: border-box;
+}
+
+/* SK Products */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #d17a8b;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+    display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav a:hover {
+  color: #d17a8b;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 25px;
+  }
+
+  .nav {
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+}
